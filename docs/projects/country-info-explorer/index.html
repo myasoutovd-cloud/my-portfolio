@@ -1,8 +1,76 @@
-<!doctype html>
-<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Country Info Explorer — Demo</title><link rel="stylesheet" href="../../styles.css"></head>
-<body><main class="container">
-<p><a href="../..">← назад</a></p>
-<h1>Country Info Explorer</h1>
-<p>Это заглушка Live Demo. Скопируйте сюда файлы проекта (index.html, css, js) — и демо заработает.</p>
-</main></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="../request.js"></script>
+    <link rel="stylesheet" href="../../loader.css">
+</head>
+
+<body>
+
+    <div class="wrapper" id="wrapper">
+        <form>
+            <input id="country-name" type="text">
+            <button type="submit" id="show">Show information</button>
+        </form>
+
+    </div>
+    <div class="country-card">
+        <div class="loader" id="loader"></div>
+        <p><b>Name:</b> <span id="name"></span></p>
+        <p><b>Region:</b> <span id="region"></span></p>
+        <p><b>Subregion:</b> <span id="subregion"></span></p>
+        <p><b>Capital:</b> <span id="capital"></span></p>
+        <p><b>Flag:</b> <span id="flag"></span></p>
+    </div>
+
+    <script>
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            const formShow = document.querySelector('form');
+            const countryName = document.getElementById('country-name');
+            const loader = document.getElementById('loader');
+            const URL = 'https://restcountries.com/v2/name/';
+            const name = document.getElementById('name');
+            const region = document.getElementById('region');
+            const subregion = document.getElementById('subregion');
+            const capital = document.getElementById('capital');
+            const flag = document.getElementById('flag');
+
+            const showCountryInfo = (country) => {
+                name.innerText = country.name;
+                region.innerText = country.region;
+                subregion.innerText = country.subregion;
+                capital.innerText = country.capital || '-';
+                flag.innerHTML = `<img src="${country.flags.png}" alt="flag">`;
+
+            };
+
+            formShow.addEventListener('submit', (event) => {
+                event.preventDefault();
+                loader.style.display = 'block';
+
+                request({
+                    method: 'GET',
+                    url: `${URL}${countryName.value}`,
+                    success: (response) => {
+                        const country = response[0];
+                        showCountryInfo(country);
+
+                        loader.style.display = 'none';
+                    },
+                    error: (err) => {
+                        alert('Error: ' + err);
+
+                        loader.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
