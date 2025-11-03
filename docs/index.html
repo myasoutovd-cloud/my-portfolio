@@ -1,23 +1,73 @@
 <!doctype html>
-<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Портфолио — Дмитрий Мясоутов</title><link rel="stylesheet" href="styles.css"></head>
-<body><main class="container"><h2>Проекты</h2>
-<div class="grid">
-  <article class="card">
-    <h3>ToDo Manager</h3>
-    <p class="links"><a href="projects/todo-manager/" target="_blank">Live</a> · <a href="https://github.com/myasoutovd-cloud/todo-manager" target="_blank">GitHub</a></p>
-  </article>
-  <article class="card">
-    <h3>Country Info Explorer</h3>
-    <p class="links"><a href="projects/country-info-explorer/" target="_blank">Live</a> · <a href="https://github.com/myasoutovd-cloud/country-info-explorer" target="_blank">GitHub</a></p>
-  </article>
-  <article class="card">
-    <h3>Travel Notes</h3>
-    <p class="links"><a href="projects/travel-notes/" target="_blank">Live</a> · <a href="https://github.com/myasoutovd-cloud/travel-notes" target="_blank">GitHub</a></p>
-  </article>
-  <article class="card">
-    <h3>Custom UI Components Pack</h3>
-    <p class="links"><a href="projects/custom-ui-components-pack/" target="_blank">Документация</a></p>
-  </article>
-</div>
-</main><script src="script.js"></script></body></html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Портфолио — Дмитрий Мясоутов</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="container">
+    <div class="header-inner">
+      <div class="profile">
+        <img id="avatar" class="avatar" src="images/avatar.png" alt="фото" />
+        <div>
+          <h1>Дмитрий Мясоутов</h1>
+          <p class="subtitle">Frontend Developer (JS / HTML / CSS / SCSS)</p>
+          <p class="contacts">Bishkek, Kyrgyzstan · <a href="tel:+996505123152">+996 (505) 123‑152</a> · <a href="myasoutov.d@gmail.com">myasoutov.d@gmail.com</a></p>
+          <p class="links"><a href="https://github.com/myasoutovd-cloud" target="_blank">GitHub</a> · <a href="#" target="_blank">LinkedIn</a> · <a href="#" target="_blank">Telegram</a></p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>О себе</h2>
+      <p>Начинающий фронтенд‑разработчик с практикой в JavaScript, DOM и API. Пишу чистый и понятный код, люблю разбирать логику и доводить интерфейс до аккуратного состояния.</p>
+    </section>
+
+    <section>
+      <h2>Проекты</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>ToDo Manager</h3>
+          <p>Менеджер задач с фильтрацией и сохранением в localStorage.</p>
+          <p class="stack">JS, HTML, CSS</p>
+          <p class="links"><a href="#" target="_blank">Live</a> · <a href="#" target="_blank">GitHub</a></p>
+        </article>
+
+        <article class="card">
+          <h3>Country Info Explorer</h3>
+          <p>SPA для поиска стран и показа данных с RESTCountries API.</p>
+          <p class="stack">JS (XHR), CSS</p>
+          <p class="links"><a href="#" target="_blank">Live</a> · <a href="#" target="_blank">GitHub</a></p>
+        </article>
+
+        <article class="card">
+          <h3>Travel Notes</h3>
+          <p>Дневник поездок с заметками, фото и фильтрацией.</p>
+          <p class="stack">Vanilla JS, SCSS</p>
+          <p class="links"><a href="#" target="_blank">Live</a> · <a href="#" target="_blank">GitHub</a></p>
+        </article>
+
+        <article class="card">
+          <h3>Custom UI Components Pack</h3>
+          <p>Набор UI-компонентов: модалки, лоадер, тултип, тосты.</p>
+          <p class="stack">HTML, CSS/SCSS, JS</p>
+          <p class="links"><a href="#" target="_blank">Документация</a></p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> Дмитрий Мясоутов</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
