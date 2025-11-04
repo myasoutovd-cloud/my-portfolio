@@ -1,8 +1,40 @@
-<!doctype html>
-<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ToDo Manager — Demo</title><link rel="stylesheet" href="../../styles.css"></head>
-<body><main class="container">
-<p><a href="../..">← назад</a></p>
-<h1>ToDo Manager</h1>
-<p>Это заглушка Live Demo. Скопируйте сюда файлы проекта (index.html, css, js) — и демо заработает.</p>
-</main></body></html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo Manager</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+<div class="app diary-theme">
+    <header class="app-header">
+        <h1>ToDo Manager</h1>
+    </header>
+
+    <section class="toolbar">
+        <form id="todoForm" class="todo-form" autocomplete="off">
+            <input id="todoInput" class="input" type="text" placeholder="Добавьте задачу и нажмите Enter…" />
+            <button class="btn btn-primary" type="submit">Добавить</button>
+        </form>
+
+        <div class="filters">
+            <button data-filter="all" class="chip active">Все</button>
+            <button data-filter="active" class="chip">Активные</button>
+            <button data-filter="completed" class="chip">Выполненные</button>
+        </div>
+
+        <div class="meta">
+            <span id="counter" class="counter">0 активных</span>
+            <button id="clearCompleted" class="btn btn-ghost">Очистить выполненные</button>
+        </div>
+    </section>
+
+    <main>
+        <ul id="todoList" class="list" aria-live="polite"></ul>
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

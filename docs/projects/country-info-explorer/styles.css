@@ -23,7 +23,7 @@ body.dark .theme-toggle{background:#eee;color:#111;}
 .project-card{background:white;border-radius:14px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.08);transition:.25s;}
 body.dark .project-card{background:#16191f;box-shadow:0 10px 30px rgba(0,0,0,.5);}
 .project-card:hover{transform:translateY(-5px);}
-.project-img{width:100%;height:220px;object-fit:cover;}
+.project-img{width:100%;height:260px;object-fit:cover;}
 .stack span{background:#eef3f9;padding:6px 8px;border-radius:6px;margin:0 4px 4px 0;font-size:12px;font-weight:600;}
 body.dark .stack span{background:#242830;color:#9ad;}
 .project-buttons a{display:inline-block;padding:10px 16px;margin-right:8px;margin-top:8px;background:#111;color:white;border-radius:6px;text-decoration:none;font-weight:600;font-size:14px;transition:transform .15s, background .25s;}
