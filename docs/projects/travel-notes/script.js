@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
         postsContainer.innerHTML = '';
 
         if (posts.length === 0) {
-            postsContainer.innerHTML = '<p class="empty">Пока нет записей...</p>';
+            postsContainer.innerHTML = '<p class="empty">No entries yet...</p>';
             return;
         }
 
