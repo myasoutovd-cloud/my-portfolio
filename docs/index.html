@@ -1,75 +1,147 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Портфолио — Дмитрий Мясоутов</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Дмитрий Мясоутов — Frontend Developer</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="container">
-    <div class="header-inner">
-      <div class="profile">
-        <img id="avatar" class="avatar" src="images/avatar.png" alt="фото" />
-        <div>
-          <h1>Дмитрий Мясоутов</h1>
-          <p class="subtitle">Frontend Developer (JS / HTML / CSS / SCSS)</p>
-          <p class="contacts">Bishkek, Kyrgyzstan · <a href="tel:+996505123152">+996 (505) 123‑152</a> · <a href="myasoutov.d@gmail.com">myasoutov.d@gmail.com</a></p>
-          <p class="links"><a href="https://github.com/myasoutovd-cloud" target="_blank">GitHub</a> · <a href="#" target="_blank">LinkedIn</a> · <a href="#" target="_blank">Telegram</a></p>
+
+<div id="preloader"><div class="loader-circle"></div></div>
+
+<header class="hero">
+    <div class="hero-content">
+        <img src="images/avatar.png" class="avatar" alt="Дмитрий" />
+        <h1 class="title">Привет, я Дмитрий 👋</h1>
+        <p class="subtitle">Frontend Developer • JavaScript(Basic), HTML, CSS, SCSS</p>
+
+        <div class="hero-links">
+            <a href="mailto:myasoutov.d@gmail.com">Email</a>
+            <a href="https://github.com/myasoutovd-cloud" target="_blank">GitHub</a>
+            <a href="https://t.me/myasoutovd" target="_blank">Telegram</a>
         </div>
-      </div>
+
+        <button class="theme-toggle" id="themeToggle">🌙 Dark mode</button>
     </div>
-  </header>
+</header>
 
-  <main class="container">
-    <section>
-      <h2>О себе</h2>
-      <p>Начинающий фронтенд‑разработчик с практикой в JavaScript, DOM и API. Пишу чистый и понятный код, люблю разбирать логику и доводить интерфейс до аккуратного состояния.</p>
+<main class="container">
+
+    <section class="section reveal">
+        <h2>Проекты</h2>
+        <div class="projects-grid">
+
+            <div class="project-card tilt">
+                <img src="assets/todo-preview.png" class="project-img"/>
+                <div class="project-info">
+                    <h3>ToDo Manager</h3>
+                    <p>Менеджер задач с фильтрами и LocalStorage.</p>
+                    <div class="stack"><span>JS</span><span>HTML</span><span>CSS</span></div>
+                    <div class="project-buttons">
+                        <a href="#" target="_blank">Live</a><a href="#">Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card tilt">
+                <img src="images/country-preview.png" class="project-img"/>
+                <div class="project-info">
+                    <h3>Country Info Explorer</h3>
+                    <p>SPA с RestCountries API.</p>
+                    <div class="stack"><span>JS</span><span>XHR</span><span>REST</span></div>
+                    <div class="project-buttons">
+                        <a href="projects/country-info-explorer/" target="_blank">Live</a><a href="#">Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card tilt">
+                <img src="images/travel-preview.png" class="project-img"/>
+                <div class="project-info">
+                    <h3>Travel Notes</h3>
+                    <p>Дневник путешествий c фото и поиском.</p>
+                    <div class="stack"><span>JS</span><span>SCSS</span></div>
+                    <div class="project-buttons">
+                        <a href="projects/travel-notes/" target="_blank">Live</a><a href="#">Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card tilt">
+                <img src="images/ui-preview.png" class="project-img"/>
+                <div class="project-info">
+                    <h3>UI Components Pack</h3>
+                    <p>Модалки, тосты, тултипы, прелоадеры.</p>
+                    <div class="stack"><span>JS</span><span>CSS</span></div>
+                    <div class="project-buttons"><a href="#" target="_blank">Docs</a></div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section>
-      <h2>Проекты</h2>
-      <div class="grid">
-        <article class="card">
-          <h3>ToDo Manager</h3>
-          <p>Менеджер задач с фильтрацией и сохранением в localStorage.</p>
-          <p class="stack">JS, HTML, CSS</p>
-          <p class="links"><a href="#" target="_blank">Live</a> · <a href="#" target="_blank">GitHub</a></p>
-        </article>
-
-        <article class="card">
-          <h3>Country Info Explorer</h3>
-          <p>SPA для поиска стран и показа данных с RESTCountries API.</p>
-          <p class="stack">JS (XHR), CSS</p>
-          <p class="links"><a href="projects/country-info-explorer/" target="_blank">Live</a>
-              · <a href="#" target="_blank">GitHub</a></p>
-        </article>
-
-        <article class="card">
-          <h3>Travel Notes</h3>
-          <p>Дневник поездок с заметками, фото и фильтрацией.</p>
-          <p class="stack">Vanilla JS, SCSS</p>
-          <p class="links"><a href="projects/travel-notes/" target="_blank">Live</a>
-              · <a href="#" target="_blank">GitHub</a></p>
-        </article>
-
-        <article class="card">
-          <h3>Custom UI Components Pack</h3>
-          <p>Набор UI-компонентов: модалки, лоадер, тултип, тосты.</p>
-          <p class="stack">HTML, CSS/SCSS, JS</p>
-          <p class="links"><a href="#" target="_blank">Документация</a></p>
-        </article>
-      </div>
+    <section class="section reveal">
+        <h2>Навыки</h2>
+        <div class="skills"><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>SCSS</span><span>Git</span><span>REST API</span><span>WebStorm</span></div>
     </section>
-  </main>
 
-  <footer class="container footer">
-    <p>© <span id="year"></span> Дмитрий Мясоутов</p>
-  </footer>
+    <!-- ✅ Tech Radar + Опыт рядом -->
+    <section class="section reveal">
+        <div class="grid-2">
+            <div class="panel">
+                <h2>Tech Radar</h2>
+                <canvas id="radarCanvas" width="500" height="360"></canvas>
+            </div>
+            <div class="panel">
+                <h2>Опыт и обучение</h2>
+                <div class="timeline">
+                    <div class="timeline-item"><div class="dot"></div><h4>2024 — 2025</h4><p>Интенсивное обучение JavaScript / Web-dev, создание проектов</p></div>
+                    <div class="timeline-item"><div class="dot"></div><h4>2025</h4><p>Стажировки / Pet-проекты / API интеграции</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <script src="script.js"></script>
+    <!-- ✅ Мини-проекты + GitHub проекты рядом -->
+    <section class="section reveal">
+        <div class="grid-2">
+            <div class="panel">
+                <h2>Мини-проекты</h2>
+                <ul class="mini-list">
+                    <li>Custom Modal / Toast / Loader</li>
+                    <li>REST requests (XHR, JSON)</li>
+                    <li>Form validation</li>
+                    <li>LocalStorage CRUD apps</li>
+                </ul>
+            </div>
+            <div class="panel">
+                <h2>GitHub Projects</h2>
+                <div id="github-projects" class="mini-list"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta reveal">
+        <h2>Готов к стажировке / Junior позиции</h2>
+        <p>С удовольствием присоединюсь к команде, чтобы расти и приносить пользу.</p>
+        <a class="cta-btn" href="mailto:myasoutov.d@gmail.com">Связаться</a>
+    </section>
+
+</main>
+
+<footer>
+    <section class="download-block reveal">
+        <h2>Резюме</h2>
+        <p>Скачать CV в PDF формате</p>
+        <a class="resume-btn" href="assets/Dmitry-Myasoutov-CV.pdf" download>📄 Скачать резюме</a>
+    </section>
+</footer>
+
+<script src="script.js"></script>
+<div id="toast">Спасибо, что посмотрели! 🚀</div>
+
 </body>
 </html>

@@ -1,0 +1,108 @@
+*{box-sizing:border-box;}
+body{
+    font-family:Inter,sans-serif;
+    margin:0;background:#f6f8fa;color:#111;
+    transition:.3s;
+}
+body.dark{background:#0f1115;color:#eee;}
+
+/* Container */
+.container{width:1100px;margin:20px auto;max-width:95%;}
+.section h2{font-size:32px;font-weight:800;margin-bottom:30px;}
+
+/* Hero */
+.hero{text-align:center;padding:70px 0;background:white;border-bottom:1px solid #eee;}
+body.dark .hero{background:#1a1d23;border-color:#333;}
+.avatar{width:140px;border-radius:16px;margin-bottom:20px;}
+.hero-links a{margin:0 10px;font-weight:600;text-decoration:none;color:#0059ff;}
+.theme-toggle{margin-top:20px;padding:8px 16px;border:none;border-radius:8px;cursor:pointer;background:#222;color:#fff;font-weight:600;}
+body.dark .theme-toggle{background:#eee;color:#111;}
+
+/* Projects Grid */
+.projects-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:40px;}
+.project-card{background:white;border-radius:14px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.08);transition:.25s;}
+body.dark .project-card{background:#16191f;box-shadow:0 10px 30px rgba(0,0,0,.5);}
+.project-card:hover{transform:translateY(-5px);}
+.project-img{width:100%;height:220px;object-fit:cover;}
+.stack span{background:#eef3f9;padding:6px 8px;border-radius:6px;margin:0 4px 4px 0;font-size:12px;font-weight:600;}
+body.dark .stack span{background:#242830;color:#9ad;}
+.project-buttons a{display:inline-block;padding:10px 16px;margin-right:8px;margin-top:8px;background:#111;color:white;border-radius:6px;text-decoration:none;font-weight:600;font-size:14px;transition:transform .15s, background .25s;}
+.project-buttons a:hover{background:#0059ff;transform:scale(1.08);}
+body.dark .project-buttons a{background:#fff;color:#111;}
+
+/* Skills */
+.skills span{display:inline-block;margin:8px;padding:8px 14px;background:#eef2f7;border-radius:6px;font-weight:600;}
+body.dark .skills span{background:#242830;}
+
+/* Panels (Radar + Experience / Mini-projects + GitHub) */
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-bottom:50px;}
+.panel{background:#fff;border-radius:14px;padding:24px;box-shadow:0 10px 30px rgba(0,0,0,.08);}
+body.dark .panel{background:#16191f;box-shadow:0 10px 30px rgba(0,0,0,.45);}
+.panel canvas{width:100%;height:auto;}
+
+/* Mini list */
+.mini-list li{margin-bottom:6px;font-weight:500;}
+
+/* CTA */
+.cta{text-align:center;padding:20px 0;}
+.cta-btn{display:inline-block;padding:14px 24px;background:#0059ff;color:white;border-radius:8px;font-weight:700;text-decoration:none;font-size:18px;}
+.cta-btn:hover{background:#003bb5;}
+
+/* Timeline */
+.timeline{border-left:3px solid #007bff;padding-left:20px;}
+.timeline-item{margin-bottom:25px;position:relative;}
+.timeline-item h4{margin:0;font-size:18px;font-weight:800;}
+.timeline-item p{margin:5px 0;color:#555;}
+.timeline-item .dot{width:14px;height:14px;border-radius:50%;background:#007bff;position:absolute;left:-28px;top:3px;}
+body.dark .timeline{border-color:#2f89ff;}
+body.dark .timeline-item .dot{background:#2f89ff;}
+
+/* Loader */
+#preloader{position:fixed;inset:0;display:flex;justify-content:center;align-items:center;background:#fff;z-index:9999;}
+body.dark #preloader{background:#0f1115;}
+.loader-circle{width:50px;height:50px;border-radius:50%;border:4px solid #ddd;border-top-color:#007bff;animation:spin 1s linear infinite;}
+@keyframes spin{to{transform:rotate(360deg);}}
+
+/* Toast */
+#toast{position:fixed;bottom:-60px;left:50%;transform:translateX(-50%);background:#111;color:#fff;padding:12px 18px;border-radius:8px;font-weight:600;transition:.4s;opacity:0;}
+body.dark #toast{background:#fff;color:#111;}
+#toast.show{bottom:30px;opacity:1;}
+
+/* Resume block */
+.download-block{
+    text-align:center;
+    padding:50px 0 70px;
+}
+.download-block h2{
+    font-size:28px;
+    font-weight:800;
+    margin-bottom:10px;
+}
+.download-block p{
+    font-size:16px;
+    color:#555;
+    margin-bottom:20px;
+}
+.resume-btn{
+    display:inline-block;
+    padding:12px 22px;
+    background:#007bff;
+    color:#fff;
+    border-radius:8px;
+    font-weight:700;
+    font-size:16px;
+    text-decoration:none;
+    transition:.25s;
+}
+.resume-btn:hover{background:#0059ff;}
+body.dark .resume-btn{background:#1d6eff;color:#fff;}
+
+/* CTA footer alignment */
+footer{background:none;padding-top:20px;}
+
+/* Responsive */
+@media(max-width:900px){
+    .grid-2{grid-template-columns:1fr;}
+    .projects-grid{grid-template-columns:1fr;}
+    .container{padding:0 16px;}
+}
