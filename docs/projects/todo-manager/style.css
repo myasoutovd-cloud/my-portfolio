@@ -16,7 +16,7 @@ body{font-family: Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;background:va
 
 /* App */
 .app{max-width:880px;margin:48px auto;padding:0 20px}
-.app-header{margin-bottom:18px}
+.app-header{margin-bottom:18px; text-align: center}
 .app-header h1{margin:0 0 6px;font-size:32px;font-weight:900;letter-spacing:.2px}
 .app-header .muted{margin:0;color:var(--muted)}
 
