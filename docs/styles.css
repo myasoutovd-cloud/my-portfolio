@@ -106,7 +106,7 @@ footer{background:none;padding-top:20px;}
     .projects-grid{grid-template-columns:1fr;}
     .container{padding:0 16px;}
 }
-cert-list {
+.cert-list {
     border-left: 3px solid #007bff;
     padding-left: 20px;
     margin-top: 10px;
