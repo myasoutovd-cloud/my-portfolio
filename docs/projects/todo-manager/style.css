@@ -72,3 +72,37 @@ body{font-family: Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;background:va
     .text{grid-area:text}
     .actions{grid-area:actions}
 }
+
+.cert-list {
+    border-left: 3px solid #007bff;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.cert-item {
+    margin-bottom: 20px;
+}
+
+.cert-item h4 {
+    font-size: 18px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.cert-item p {
+    margin: 6px 0 10px;
+    line-height: 1.45;
+    color: var(--muted);
+}
+
+.cert-link {
+    display: inline-block;
+    margin-top: 6px;
+    font-weight: 600;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.cert-link:hover {
+    text-decoration: underline;
+}
