@@ -40,6 +40,39 @@ body.dark .skills span{background:#242830;}
 body.dark .panel{background:#16191f;box-shadow:0 10px 30px rgba(0,0,0,.45);}
 .panel canvas{width:100%;height:auto;}
 
+/* ---- CERTIFICATES ---- */
+.cert-item {
+    padding: 10px 0;
+}
+
+.cert-item h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.cert-item p {
+    margin: 6px 0 12px;
+    line-height: 1.6;
+    color: #444;
+}
+
+body.dark .cert-item p {
+    color: #ccc;
+}
+
+.cert-link {
+    display: inline-block;
+    margin-top: 6px;
+    font-weight: 600;
+    color: #0059ff;
+    text-decoration: none;
+}
+
+.cert-link:hover {
+    text-decoration: underline;
+}
+
 /* Mini list */
 .mini-list li{margin-bottom:6px;font-weight:500;}
 
@@ -105,37 +138,4 @@ footer{background:none;padding-top:20px;}
     .grid-2{grid-template-columns:1fr;}
     .projects-grid{grid-template-columns:1fr;}
     .container{padding:0 16px;}
-}
-.cert-list {
-    border-left: 3px solid #007bff;
-    padding-left: 20px;
-    margin-top: 10px;
-}
-
-.cert-item {
-    margin-bottom: 20px;
-}
-
-.cert-item h4 {
-    font-size: 18px;
-    font-weight: 800;
-    margin: 0;
-}
-
-.cert-item p {
-    margin: 6px 0 10px;
-    line-height: 1.45;
-    color: var(--muted);
-}
-
-.cert-link {
-    display: inline-block;
-    margin-top: 6px;
-    font-weight: 600;
-    color: #007bff;
-    text-decoration: none;
-}
-
-.cert-link:hover {
-    text-decoration: underline;
 }
