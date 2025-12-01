@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather Explorer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../loader.css">
+</head>
+<body>
+<header class="top">
+    <div class="wrap">
+        <h1>Weather Explorer</h1>
+
+        <div class="toolbar">
+            <div class="control">
+                <input id="city" type="text" placeholder="Введите город (например, Bishkek)" />
+            </div>
+            <div class="control">
+                <select id="units">
+                    <option value="celsius" selected>°C</option>
+                    <option value="fahrenheit">°F</option>
+                </select>
+            </div>
+            <button id="searchBtn" class="btn btn-primary">Показать</button>
+        </div>
+    </div>
+</header>
+
+<main class="wrap">
+    <div id="loader" class="loader" aria-hidden="true"></div>
+
+    <div id="error" class="error" hidden>Не удалось загрузить данные. Попробуйте ещё раз.</div>
+
+    <section id="current" class="current" hidden></section>
+
+    <section>
+        <h2 class="section-title">Почасовой прогноз</h2>
+        <div id="hourly" class="hours"></div>
+    </section>
+
+    <section>
+        <h2 class="section-title">Прогноз на 7 дней</h2>
+        <div id="daily" class="days"></div>
+    </section>
+</main>
+
+<script src="requestPromise.js"> </script>
+<script src="script.js"></script>
+</body>
+</html>
