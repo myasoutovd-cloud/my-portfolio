@@ -33,10 +33,8 @@ https://myasoutovd-cloud.github.io/my-portfolio/projects/country-info-explorer/
 ```
 projects/country-info-explorer/
 ├─ index.html
-├─ styles.css
-├─ script.js
-├─ assets/
-│  └─ country-preview.png
+├─ style.css
+├─ request.js
 └─ README.md
 ```
 ---

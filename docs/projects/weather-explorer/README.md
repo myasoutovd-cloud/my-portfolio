@@ -6,7 +6,7 @@ The app sends a request to a weather API and shows temperature, weather conditio
 ---
 
 ## 🚀 Live Demo
-https://myasoutovd-cloud.github.io/my-portfolio/projects/weather-app/
+https://myasoutovd-cloud.github.io/my-portfolio/projects/weather-explorer/
 
 ---
 
@@ -32,12 +32,11 @@ https://myasoutovd-cloud.github.io/my-portfolio/projects/weather-app/
 
 ## 📂 Project Structure
 ```
-projects/weather-app/
+projects/weather-explorer/
 ├─ index.html
-├─ styles.css
+├─ style.css
+├─ requestPromise.js
 ├─ script.js
-├─ assets/
-│  └─ weather-preview.png
 └─ README.md
 ```
 ---

@@ -32,10 +32,8 @@ https://myasoutovd-cloud.github.io/my-portfolio/projects/todo-manager/
 ```
 projects/todo-manager/
 ├─ index.html
-├─ styles.css
+├─ style.css
 ├─ script.js
-├─ assets/
-│  └─ todo-preview.png
 └─ README.md
 ```
 ---

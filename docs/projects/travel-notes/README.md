@@ -32,11 +32,9 @@ https://myasoutovd-cloud.github.io/my-portfolio/projects/travel-notes/
 ```
 projects/travel-notes/
 ├─ index.html
-├─ styles.scss
-├─ styles.css
+├─ style.css
+├─ request.js
 ├─ script.js
-├─ assets/
-│  └─ travel-preview.png
 └─ README.md
 ```
 ---
