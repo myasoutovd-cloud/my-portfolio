@@ -52,7 +52,7 @@ projects/country-info-explorer/
 ---
 
 ## 📸 Preview
-![Country Info Explorer Preview](./assets/country-preview.png)
+![Country Info Explorer Preview](../../assets/country-preview.png)
 
 ---
 

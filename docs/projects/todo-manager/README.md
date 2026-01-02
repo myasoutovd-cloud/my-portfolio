@@ -50,7 +50,7 @@ projects/todo-manager/
 ---
 
 ## 📸 Preview
-![ToDo Manager Preview](./assets/todo-preview.png)
+![ToDo Manager Preview](../../assets/todo-preview.png)
 
 ---
 

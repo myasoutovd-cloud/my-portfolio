@@ -53,7 +53,7 @@ projects/weather-app/
 ---
 
 ## 📸 Preview
-![Weather App Preview](./assets/weather-preview.png)
+![Weather App Preview](../../assets/weather-preview.png)
 
 ---
 

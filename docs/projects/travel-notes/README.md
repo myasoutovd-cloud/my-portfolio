@@ -52,7 +52,7 @@ projects/travel-notes/
 ---
 
 ## 📸 Preview
-![Travel Notes Preview](./assets/travel-preview.png)
+![Travel Notes Preview](../../assets/travel-preview.png)
 
 ---
 
