@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Дмитрий Мясоутов — Frontend Developer</title>
+    <title>Dmitry Myasoutov — Frontend Developer</title>
 
     <link rel="stylesheet" href="./styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,23 +15,29 @@
 
 <header class="hero">
     <div class="hero-content">
-        <img src="assets/avatar.png" class="avatar" alt="Дмитрий" />
+        <img src="assets/avatar.png" class="avatar" alt="Dmitry Myasoutov" />
+
         <h1 class="title">Hi, I'm Dmitry 👋</h1>
+
         <p class="subtitle">
             Junior Frontend Developer focused on JavaScript, HTML and CSS
         </p>
+
         <p class="hero-desc">
             I build clean, responsive interfaces and practice working with APIs and browser storage.
         </p>
+
         <div class="hero-actions">
             <a class="hero-btn primary" href="#projects">View Projects</a>
-            <a class="hero-btn secondary" href="./assets/Dmitry-Myasoutov-CV.pdf" target="_blank">Resume</a>
+            <a class="hero-btn secondary" href="./assets/Dmitry-Myasoutov-CV.pdf" target="_blank" rel="noopener">
+                Resume
+            </a>
         </div>
 
         <div class="hero-links">
             <a href="mailto:myasoutov.d@gmail.com">Email</a>
-            <a href="https://github.com/myasoutovd-cloud" target="_blank">GitHub</a>
-            <a href="https://t.me/myasoutovd" target="_blank">Telegram</a>
+            <a href="https://github.com/myasoutovd-cloud" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://t.me/myasoutovd" target="_blank" rel="noopener">Telegram</a>
         </div>
 
         <button class="theme-toggle" id="themeToggle">🌙 Dark mode</button>
@@ -42,91 +48,157 @@
 
     <section class="section reveal" id="projects">
         <h2>Projects</h2>
+
         <div class="projects-grid">
 
             <div class="project-card tilt">
-                <img src="./assets/todo-preview.png" class="project-img"/>
+                <img src="./assets/todo-preview.png" class="project-img" alt="ToDo Manager preview" />
                 <div class="project-info">
                     <h3>ToDo Manager</h3>
-                    <p>Менеджер задач с фильтрами и LocalStorage.</p>
+                    <p class="project-desc">
+                        Task management application for organizing daily tasks.
+                    </p>
+                    <ul class="project-points">
+                        <li>Built task creation, completion and deletion logic</li>
+                        <li>Implemented filters for active and completed tasks</li>
+                        <li>Stored data using browser localStorage</li>
+                    </ul>
                     <div class="stack"><span>JS</span><span>HTML</span><span>CSS</span></div>
                     <div class="project-buttons">
-                        <a href="projects/todo-manager/" target="_blank">Live</a>
+                        <a href="projects/todo-manager/" target="_blank" rel="noopener">Live</a>
                         <a href="https://github.com/myasoutovd-cloud/my-portfolio/tree/main/docs/projects/todo-manager"
-                           target="_blank">
-                            Code
-                        </a>
+                           target="_blank" rel="noopener">Code</a>
                     </div>
                 </div>
             </div>
 
             <div class="project-card tilt">
-                <img src="./assets/country-preview.png" class="project-img"/>
+                <img src="./assets/country-preview.png" class="project-img" alt="Country Info Explorer preview" />
                 <div class="project-info">
                     <h3>Country Info Explorer</h3>
-                    <p>SPA с RestCountries API.</p>
+                    <p class="project-desc">
+                        Single-page application for searching and viewing country information.
+                    </p>
+                    <ul class="project-points">
+                        <li>Fetched data from RESTCountries API using XHR</li>
+                        <li>Displayed country details dynamically</li>
+                        <li>Handled loading and error states</li>
+                    </ul>
                     <div class="stack"><span>JS</span><span>XHR</span><span>REST</span></div>
                     <div class="project-buttons">
-                        <a href="projects/country-info-explorer/" target="_blank">Live</a>
+                        <a href="projects/country-info-explorer/" target="_blank" rel="noopener">Live</a>
                         <a href="https://github.com/myasoutovd-cloud/my-portfolio/tree/main/docs/projects/country-info-explorer"
-                           target="_blank">
-                            Code
-                        </a>
+                           target="_blank" rel="noopener">Code</a>
                     </div>
                 </div>
             </div>
 
             <div class="project-card tilt">
-                <img src="./assets/travel-preview.png" class="project-img"/>
+                <img src="./assets/travel-preview.png" class="project-img" alt="Travel Notes preview" />
                 <div class="project-info">
                     <h3>Travel Notes</h3>
-                    <p>Дневник путешествий c фото и поиском.</p>
+                    <p class="project-desc">
+                        Travel diary app for storing notes and photos from trips.
+                    </p>
+                    <ul class="project-points">
+                        <li>Created note management logic with JavaScript</li>
+                        <li>Implemented filtering and search</li>
+                        <li>Styled interface using SCSS</li>
+                    </ul>
                     <div class="stack"><span>JS</span><span>SCSS</span></div>
                     <div class="project-buttons">
-                        <a href="projects/travel-notes/" target="_blank">Live</a>
+                        <a href="projects/travel-notes/" target="_blank" rel="noopener">Live</a>
                         <a href="https://github.com/myasoutovd-cloud/my-portfolio/tree/main/docs/projects/travel-notes"
-                           target="_blank">
-                            Code
-                        </a>
+                           target="_blank" rel="noopener">Code</a>
                     </div>
                 </div>
             </div>
 
             <div class="project-card tilt">
-                <img src="./assets/weather-preview.png" class="project-img"/>
+                <img src="./assets/weather-preview.png" class="project-img" alt="Weather Explorer preview" />
                 <div class="project-info">
                     <h3>Weather Explorer</h3>
-                    <p>Мини-приложение, которое получает погоду по названию города.</p>
+                    <p class="project-desc">
+                        Weather application that shows current weather by city name.
+                    </p>
+                    <ul class="project-points">
+                        <li>Integrated weather API using XHR / Fetch</li>
+                        <li>Displayed temperature and weather conditions</li>
+                        <li>Implemented loading and error handling</li>
+                    </ul>
                     <div class="stack"><span>JS</span><span>HTML</span><span>CSS</span><span>API (XHR/Fetch)</span></div>
                     <div class="project-buttons">
-                        <a href="projects/weather-explorer" target="_blank">Live</a>
+                        <a href="projects/weather-explorer/" target="_blank" rel="noopener">Live</a>
                         <a href="https://github.com/myasoutovd-cloud/my-portfolio/tree/main/docs/projects/weather-explorer"
-                           target="_blank">
-                            Code
-                        </a>
+                           target="_blank" rel="noopener">Code</a>
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
     <section class="section reveal">
-        <h2>Навыки</h2>
-        <div class="skills"><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>SCSS</span><span>Git</span><span>REST API</span><span>WebStorm</span></div>
+        <h2>Skills</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-group">
+                <h4>Core</h4>
+                <ul>
+                    <li>JavaScript (ES6+, DOM, events)</li>
+                    <li>HTML5 (semantic markup)</li>
+                    <li>CSS3</li>
+                    <li>SCSS</li>
+                </ul>
+            </div>
+
+            <div class="skill-group">
+                <h4>APIs & Async</h4>
+                <ul>
+                    <li>REST API</li>
+                    <li>XMLHttpRequest (XHR)</li>
+                    <li>Fetch API</li>
+                    <li>JSON</li>
+                </ul>
+            </div>
+
+            <div class="skill-group">
+                <h4>Layout & Styling</h4>
+                <ul>
+                    <li>Responsive design</li>
+                    <li>Flexbox</li>
+                    <li>CSS Grid</li>
+                </ul>
+            </div>
+
+            <div class="skill-group">
+                <h4>Tools</h4>
+                <ul>
+                    <li>Git & GitHub</li>
+                    <li>WebStorm</li>
+                    <li>Browser DevTools</li>
+                </ul>
+            </div>
+
+        </div>
     </section>
 
-    <!-- ✅ Tech Radar + Опыт рядом -->
     <section class="section reveal">
-        <div class="grid-2">
-            <div class="panel">
-                <h2>Tech Radar</h2>
-                <canvas id="radarCanvas" width="500" height="360"></canvas>
-            </div>
-            <div class="panel">
-                <h2>Опыт и обучение</h2>
-                <div class="timeline">
-                    <div class="timeline-item"><div class="dot"></div><h4>2024 — 2025</h4><p>Интенсивное обучение JavaScript / Web-dev, создание проектов</p></div>
-                    <div class="timeline-item"><div class="dot"></div><h4>2025</h4><p>Стажировки / Pet-проекты / API интеграции</p></div>
+        <div class="panel">
+            <h2>Experience & Education</h2>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="dot"></div>
+                    <h4>2024 — 2025</h4>
+                    <p>Intensive JavaScript & Web Development practice, building real projects</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="dot"></div>
+                    <h4>2025</h4>
+                    <p>Pet projects, API integrations, frontend fundamentals</p>
                 </div>
             </div>
         </div>
@@ -134,60 +206,100 @@
 
     <section class="section reveal">
         <div class="panel">
-            <h2>Сертификаты</h2>
+            <h2>Additional Experience</h2>
 
-            <div class="cert-item">
-                <h3>Udacity — Programming Fundamentals (2025)</h3>
-                <p>Подтверждённое прохождение курса Udacity по основам программирования:
-                    переменные, условия, циклы, базовые алгоритмы и структура кода.</p>
+            <div class="extras">
+                <div class="extras-col">
+                    <h4>What I practiced</h4>
+                    <ul class="mini-list">
+                        <li>REST API requests (XHR / Fetch), JSON parsing</li>
+                        <li>LocalStorage CRUD apps (create, edit, delete)</li>
+                        <li>Form validation and UI states (loading / error)</li>
+                        <li>DOM manipulation and event handling</li>
+                    </ul>
+                </div>
 
-                <a href="www.udacity.com/certif
-icate/e/5fb33f2e-b57d-11f0-990a-e3575a6d387c"
-                   target="_blank"
-                   class="cert-link">
-                    📄 Открыть сертификат
+                <div class="extras-col">
+                    <h4>UI & Workflow</h4>
+                    <ul class="mini-list">
+                        <li>Reusable UI components (modals, toasts, loaders)</li>
+                        <li>Responsive layout (Flexbox / CSS Grid)</li>
+                        <li>Clean project structure and readable code</li>
+                        <li>Git workflow (commits, branches, GitHub Pages deploy)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="extras-links">
+                <a class="extras-link" href="https://github.com/myasoutovd-cloud" target="_blank" rel="noopener">
+                    View my GitHub →
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- ✅ Мини-проекты + GitHub проекты рядом -->
     <section class="section reveal">
-        <div class="grid-2">
-            <div class="panel">
-                <h2>Мини-проекты</h2>
-                <ul class="mini-list">
-                    <li>Custom Modal / Toast / Loader</li>
-                    <li>REST requests (XHR, JSON)</li>
-                    <li>Form validation</li>
-                    <li>LocalStorage CRUD apps</li>
-                </ul>
-            </div>
-            <div class="panel">
-                <h2>GitHub Projects</h2>
-                <div id="github-projects" class="mini-list"></div>
+        <div class="panel">
+            <h2>Certificates</h2>
+
+            <div class="cert-item">
+                <h3>Udacity — Programming Fundamentals (2025)</h3>
+                <p>
+                    Completed Udacity course covering core programming concepts: variables, conditions,
+                    loops, basic algorithms, and clean code structure.
+                </p>
+
+                <a
+                        href="https://www.udacity.com/certificate/e/5fb33f2e-b57d-11f0-990a-e3575a6d387c"
+                        target="_blank"
+                        rel="noopener"
+                        class="cert-link"
+                >
+                    📄 Open certificate
+                </a>
             </div>
         </div>
     </section>
 
-    <section class="cta reveal">
-        <h2>Готов к стажировке / Junior позиции</h2>
-        <p>С удовольствием присоединюсь к команде, чтобы расти и приносить пользу.</p>
-        <a class="cta-btn" href="mailto:myasoutov.d@gmail.com">Связаться</a>
+    <section class="section reveal">
+        <div class="panel cta-panel">
+            <h2>Let’s work together</h2>
+
+            <p class="cta-text">
+                I’m open to a Junior Frontend Developer position or internship.
+                Ready to learn, grow, and contribute to real projects.
+            </p>
+
+            <div class="cta-actions">
+                <a class="cta-btn primary" href="mailto:myasoutov.d@gmail.com">
+                    📧 Email me
+                </a>
+
+                <a class="cta-btn secondary" href="https://t.me/myasoutovd" target="_blank">
+                    💬 Telegram
+                </a>
+
+                <a class="cta-btn ghost" href="./assets/Dmitry-Myasoutov-CV.pdf" target="_blank">
+                    📄 View Resume
+                </a>
+            </div>
+        </div>
     </section>
 
 </main>
 
 <footer>
     <section class="download-block reveal">
-        <h2>Резюме</h2>
-        <p>Скачать CV в PDF формате</p>
-        <a class="resume-btn" href="./assets/Dmitry-Myasoutov-CV.pdf" download>📄 Скачать резюме</a>
+        <h2>Resume</h2>
+        <p>Download my CV in PDF format</p>
+        <a class="resume-btn" href="./assets/Dmitry-Myasoutov-CV.pdf" download>
+            📄 Download resume
+        </a>
     </section>
 </footer>
 
 <script src="./script.js"></script>
-<div id="toast">Спасибо, что посмотрели! 🚀</div>
+<div id="toast">Thanks for visiting! 🚀</div>
 
 </body>
 </html>
