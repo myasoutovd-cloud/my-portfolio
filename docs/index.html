@@ -5,301 +5,286 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dmitry Myasoutov — Frontend Developer</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<div id="preloader"><div class="loader-circle"></div></div>
+<header class="top">
+    <div class="top-inner wrap">
+        <a class="brand" href="#top" aria-label="Go to top">DM</a>
 
-<header class="hero">
-    <div class="hero-content">
-        <img src="assets/avatar.png" class="avatar" alt="Dmitry Myasoutov" />
-
-        <h1 class="title">Hi, I'm Dmitry 👋</h1>
-
-        <p class="subtitle">
-            Junior Frontend Developer focused on JavaScript, HTML and CSS
-        </p>
-
-        <p class="hero-desc">
-            I build clean, responsive interfaces and practice working with APIs and browser storage.
-        </p>
-
-        <div class="hero-actions">
-            <a class="hero-btn primary" href="#projects">View Projects</a>
-            <a class="hero-btn secondary" href="./assets/Dmitry-Myasoutov-CV.pdf" target="_blank" rel="noopener">
-                Resume
-            </a>
-        </div>
-
-        <div class="hero-links">
-            <a href="mailto:myasoutov.d@gmail.com">Email</a>
-            <a href="https://github.com/myasoutovd-cloud" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://t.me/myasoutovd" target="_blank" rel="noopener">Telegram</a>
-        </div>
-
-        <button class="theme-toggle" id="themeToggle">🌙 Dark mode</button>
+        <nav class="nav" aria-label="Primary navigation">
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+            <a href="./assets/Dmitry-Myasoutov-CV.pdf" target="_blank" rel="noopener">Resume</a>
+        </nav>
     </div>
 </header>
 
-<main class="container">
+<main id="top">
 
-    <section class="section reveal" id="projects">
-        <h2>Projects</h2>
+    <section class="hero">
+        <div class="wrap hero-grid">
 
-        <div class="projects-grid">
+            <div class="hero-left">
+                <p class="hero-kicker">Bishkek, Kyrgyzstan · Open to internship / junior</p>
 
-            <div class="project-card tilt">
-                <img src="./assets/todo-preview.png" class="project-img" alt="ToDo Manager preview" />
-                <div class="project-info">
-                    <h3>ToDo Manager</h3>
-                    <p class="project-desc">
-                        Task management application for organizing daily tasks.
-                    </p>
-                    <ul class="project-points">
-                        <li>Built task creation, completion and deletion logic</li>
-                        <li>Implemented filters for active and completed tasks</li>
-                        <li>Stored data using browser localStorage</li>
-                    </ul>
-                    <div class="stack"><span>JS</span><span>HTML</span><span>CSS</span></div>
-                    <div class="project-buttons">
-                        <a href="projects/todo-manager/" target="_blank" rel="noopener">Live</a>
-                        <a href="https://github.com/myasoutovd-cloud/my-portfolio/tree/main/docs/projects/todo-manager"
-                           target="_blank" rel="noopener">Code</a>
-                    </div>
-                </div>
-            </div>
+                <h1>Hi, I’m Dmitry</h1>
 
-            <div class="project-card tilt">
-                <img src="./assets/country-preview.png" class="project-img" alt="Country Info Explorer preview" />
-                <div class="project-info">
-                    <h3>Country Info Explorer</h3>
-                    <p class="project-desc">
-                        Single-page application for searching and viewing country information.
-                    </p>
-                    <ul class="project-points">
-                        <li>Fetched data from RESTCountries API using XHR</li>
-                        <li>Displayed country details dynamically</li>
-                        <li>Handled loading and error states</li>
-                    </ul>
-                    <div class="stack"><span>JS</span><span>XHR</span><span>REST</span></div>
-                    <div class="project-buttons">
-                        <a href="projects/country-info-explorer/" target="_blank" rel="noopener">Live</a>
-                        <a href="https://github.com/myasoutovd-cloud/my-portfolio/tree/main/docs/projects/country-info-explorer"
-                           target="_blank" rel="noopener">Code</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card tilt">
-                <img src="./assets/travel-preview.png" class="project-img" alt="Travel Notes preview" />
-                <div class="project-info">
-                    <h3>Travel Notes</h3>
-                    <p class="project-desc">
-                        Travel diary app for storing notes and photos from trips.
-                    </p>
-                    <ul class="project-points">
-                        <li>Created note management logic with JavaScript</li>
-                        <li>Implemented filtering and search</li>
-                        <li>Styled interface using SCSS</li>
-                    </ul>
-                    <div class="stack"><span>JS</span><span>SCSS</span></div>
-                    <div class="project-buttons">
-                        <a href="projects/travel-notes/" target="_blank" rel="noopener">Live</a>
-                        <a href="https://github.com/myasoutovd-cloud/my-portfolio/tree/main/docs/projects/travel-notes"
-                           target="_blank" rel="noopener">Code</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card tilt">
-                <img src="./assets/weather-preview.png" class="project-img" alt="Weather Explorer preview" />
-                <div class="project-info">
-                    <h3>Weather Explorer</h3>
-                    <p class="project-desc">
-                        Weather application that shows current weather by city name.
-                    </p>
-                    <ul class="project-points">
-                        <li>Integrated weather API using XHR / Fetch</li>
-                        <li>Displayed temperature and weather conditions</li>
-                        <li>Implemented loading and error handling</li>
-                    </ul>
-                    <div class="stack"><span>JS</span><span>HTML</span><span>CSS</span><span>API (XHR/Fetch)</span></div>
-                    <div class="project-buttons">
-                        <a href="projects/weather-explorer/" target="_blank" rel="noopener">Live</a>
-                        <a href="https://github.com/myasoutovd-cloud/my-portfolio/tree/main/docs/projects/weather-explorer"
-                           target="_blank" rel="noopener">Code</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="section reveal">
-        <h2>Skills</h2>
-
-        <div class="skills-grid">
-
-            <div class="skill-group">
-                <h4>Core</h4>
-                <ul>
-                    <li>JavaScript (ES6+, DOM, events)</li>
-                    <li>HTML5 (semantic markup)</li>
-                    <li>CSS3</li>
-                    <li>SCSS</li>
-                </ul>
-            </div>
-
-            <div class="skill-group">
-                <h4>APIs & Async</h4>
-                <ul>
-                    <li>REST API</li>
-                    <li>XMLHttpRequest (XHR)</li>
-                    <li>Fetch API</li>
-                    <li>JSON</li>
-                </ul>
-            </div>
-
-            <div class="skill-group">
-                <h4>Layout & Styling</h4>
-                <ul>
-                    <li>Responsive design</li>
-                    <li>Flexbox</li>
-                    <li>CSS Grid</li>
-                </ul>
-            </div>
-
-            <div class="skill-group">
-                <h4>Tools</h4>
-                <ul>
-                    <li>Git & GitHub</li>
-                    <li>WebStorm</li>
-                    <li>Browser DevTools</li>
-                </ul>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="section reveal">
-        <div class="panel">
-            <h2>Experience & Education</h2>
-
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="dot"></div>
-                    <h4>2024 — 2025</h4>
-                    <p>Intensive JavaScript & Web Development practice, building real projects</p>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="dot"></div>
-                    <h4>2025</h4>
-                    <p>Pet projects, API integrations, frontend fundamentals</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section reveal">
-        <div class="panel">
-            <h2>Additional Experience</h2>
-
-            <div class="extras">
-                <div class="extras-col">
-                    <h4>What I practiced</h4>
-                    <ul class="mini-list">
-                        <li>REST API requests (XHR / Fetch), JSON parsing</li>
-                        <li>LocalStorage CRUD apps (create, edit, delete)</li>
-                        <li>Form validation and UI states (loading / error)</li>
-                        <li>DOM manipulation and event handling</li>
-                    </ul>
-                </div>
-
-                <div class="extras-col">
-                    <h4>UI & Workflow</h4>
-                    <ul class="mini-list">
-                        <li>Reusable UI components (modals, toasts, loaders)</li>
-                        <li>Responsive layout (Flexbox / CSS Grid)</li>
-                        <li>Clean project structure and readable code</li>
-                        <li>Git workflow (commits, branches, GitHub Pages deploy)</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="extras-links">
-                <a class="extras-link" href="https://github.com/myasoutovd-cloud" target="_blank" rel="noopener">
-                    View my GitHub →
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section class="section reveal">
-        <div class="panel">
-            <h2>Certificates</h2>
-
-            <div class="cert-item">
-                <h3>Udacity — Programming Fundamentals (2025)</h3>
-                <p>
-                    Completed Udacity course covering core programming concepts: variables, conditions,
-                    loops, basic algorithms, and clean code structure.
+                <p class="hero-subtitle">
+                    Junior Frontend Developer focused on <span class="accent">JavaScript</span>, HTML and CSS
                 </p>
 
-                <a
-                        href="https://www.udacity.com/certificate/e/5fb33f2e-b57d-11f0-990a-e3575a6d387c"
-                        target="_blank"
-                        rel="noopener"
-                        class="cert-link"
-                >
-                    📄 Open certificate
-                </a>
+                <p class="hero-desc">
+                    I build clean responsive UI, work with APIs and localStorage, and improve frontend fundamentals through real projects.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="btn primary">View Projects</a>
+                    <a href="./assets/Dmitry-Myasoutov-CV.pdf" target="_blank" rel="noopener" class="btn ghost">Resume</a>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <div class="hero-card">
+                    <img class="hero-avatar" src="./assets/avatar.png" alt="Dmitry Myasoutov" loading="eager" />
+
+                    <div class="hero-meta">
+                        <div class="hero-name">Dmitry Myasoutov</div>
+                        <div class="hero-role">Frontend · JS / HTML / CSS / SCSS</div>
+                    </div>
+
+                    <div class="contact-icons" aria-label="Contacts">
+                        <a href="mailto:myasoutov.d@gmail.com" aria-label="Email">
+                            <img src="assets/icons/mail.svg" alt="" aria-hidden="true" />
+                            <span>Email</span>
+                        </a>
+
+                        <a href="https://github.com/myasoutovd-cloud" target="_blank" rel="noopener" aria-label="GitHub">
+                            <img src="assets/icons/github.svg" alt="" aria-hidden="true" />
+                            <span>GitHub</span>
+                        </a>
+
+                        <a href="https://t.me/myasoutovd" target="_blank" rel="noopener" aria-label="Telegram">
+                            <img src="assets/icons/telegram.svg" alt="" aria-hidden="true" />
+                            <span>Telegram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="wrap">
+            <h2>Projects</h2>
+
+            <div class="projects">
+
+                <article class="project">
+                    <img src="./assets/todo-preview.png" alt="ToDo Manager preview" loading="lazy" />
+                    <div class="project-body">
+                        <h3>ToDo Manager</h3>
+                        <p class="project-desc">Task manager with filters and persistence in localStorage.</p>
+                        <ul class="project-points">
+                            <li>Create, complete and delete tasks</li>
+                            <li>Filter: All / Active / Completed</li>
+                            <li>Save and restore state via localStorage</li>
+                        </ul>
+                        <div class="project-buttons">
+                            <a href="projects/todo-manager/" target="_blank" rel="noopener">Live</a>
+                            <a href="https://github.com/myasoutovd-cloud/my-portfolio/tree/main/docs/projects/todo-manager" target="_blank" rel="noopener">Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <img src="./assets/country-preview.png" alt="Country Info Explorer preview" loading="lazy" />
+                    <div class="project-body">
+                        <h3>Country Info Explorer</h3>
+                        <p class="project-desc">SPA to search countries and view details from RESTCountries API.</p>
+                        <ul class="project-points">
+                            <li>Fetch data via XHR and render dynamically</li>
+                            <li>Loading + error states</li>
+                            <li>Clean UI with responsive layout</li>
+                        </ul>
+                        <div class="project-buttons">
+                            <a href="projects/country-info-explorer/" target="_blank" rel="noopener">Live</a>
+                            <a href="https://github.com/myasoutovd-cloud/my-portfolio/tree/main/docs/projects/country-info-explorer" target="_blank" rel="noopener">Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <img src="./assets/travel-preview.png" alt="Travel Notes preview" loading="lazy" />
+                    <div class="project-body">
+                        <h3>Travel Notes</h3>
+                        <p class="project-desc">Travel diary for notes and photos with search and filtering.</p>
+                        <ul class="project-points">
+                            <li>Create and manage notes (CRUD)</li>
+                            <li>Search + filter by tags/keywords</li>
+                            <li>SCSS styling and UI states</li>
+                        </ul>
+                        <div class="project-buttons">
+                            <a href="projects/travel-notes/" target="_blank" rel="noopener">Live</a>
+                            <a href="https://github.com/myasoutovd-cloud/my-portfolio/tree/main/docs/projects/travel-notes" target="_blank" rel="noopener">Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <img src="./assets/weather-preview.png" alt="Weather Explorer preview" loading="lazy" />
+                    <div class="project-body">
+                        <h3>Weather Explorer</h3>
+                        <p class="project-desc">Weather app that shows current conditions by city name.</p>
+                        <ul class="project-points">
+                            <li>API integration (XHR / Fetch)</li>
+                            <li>Loading, error and empty states</li>
+                            <li>Display temperature and key details</li>
+                        </ul>
+                        <div class="project-buttons">
+                            <a href="projects/weather-explorer/" target="_blank" rel="noopener">Live</a>
+                            <a href="https://github.com/myasoutovd-cloud/my-portfolio/tree/main/docs/projects/weather-explorer" target="_blank" rel="noopener">Code</a>
+                        </div>
+                    </div>
+                </article>
+
             </div>
         </div>
     </section>
 
-    <section class="section reveal">
-        <div class="panel cta-panel">
+    <section id="skills" class="section">
+        <div class="wrap">
+            <h2>Skills</h2>
+
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h4>Core Frontend</h4>
+                    <ul>
+                        <li>JavaScript (ES6+, DOM, events)</li>
+                        <li>HTML5 (semantic markup)</li>
+                        <li>CSS3</li>
+                        <li>SCSS</li>
+                    </ul>
+                </div>
+
+                <div class="skill-group">
+                    <h4>Async & APIs</h4>
+                    <ul>
+                        <li>REST API</li>
+                        <li>XMLHttpRequest (XHR)</li>
+                        <li>Fetch API</li>
+                        <li>JSON</li>
+                    </ul>
+                </div>
+
+                <div class="skill-group">
+                    <h4>Layout & Styling</h4>
+                    <ul>
+                        <li>Responsive design</li>
+                        <li>Flexbox</li>
+                        <li>CSS Grid</li>
+                    </ul>
+                </div>
+
+                <div class="skill-group">
+                    <h4>Tools & Workflow</h4>
+                    <ul>
+                        <li>Git & GitHub</li>
+                        <li>WebStorm</li>
+                        <li>Browser DevTools</li>
+                        <li>GitHub Pages deployment</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="wrap">
+            <div class="panel">
+                <h2>Experience</h2>
+
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <div class="dot"></div>
+                        <h4>2024 — Present</h4>
+                        <p class="role">Frontend Practice & Pet Projects</p>
+                        <ul class="exp-points">
+                            <li>Built multiple frontend applications using vanilla JavaScript</li>
+                            <li>Worked with REST APIs (XHR / Fetch), JSON parsing, error handling</li>
+                            <li>Implemented state persistence with localStorage</li>
+                            <li>Focused on clean markup, readable code, and UI structure</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="dot"></div>
+                        <h4>2025</h4>
+                        <p class="role">Self-education & Portfolio Development</p>
+                        <ul class="exp-points">
+                            <li>Designed and refined personal portfolio website</li>
+                            <li>Improved responsive layouts using Flexbox and CSS Grid</li>
+                            <li>Practiced Git workflow and GitHub Pages deployment</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="wrap contact">
             <h2>Let’s work together</h2>
+            <p>Open to a Junior Frontend Developer position or internship.</p>
 
-            <p class="cta-text">
-                I’m open to a Junior Frontend Developer position or internship.
-                Ready to learn, grow, and contribute to real projects.
-            </p>
-
-            <div class="cta-actions">
-                <a class="cta-btn primary" href="mailto:myasoutov.d@gmail.com">
-                    📧 Email me
+            <div class="contact-icons" aria-label="Contacts">
+                <a href="mailto:myasoutov.d@gmail.com" aria-label="Email">
+                    <img src="assets/icons/mail.svg" alt="" aria-hidden="true" />
+                    <span>Email</span>
                 </a>
 
-                <a class="cta-btn secondary" href="https://t.me/myasoutovd" target="_blank">
-                    💬 Telegram
+                <a href="https://github.com/myasoutovd-cloud" target="_blank" rel="noopener" aria-label="GitHub">
+                    <img src="assets/icons/github.svg" alt="" aria-hidden="true" />
+                    <span>GitHub</span>
                 </a>
 
-                <a class="cta-btn ghost" href="./assets/Dmitry-Myasoutov-CV.pdf" target="_blank">
-                    📄 View Resume
+                <a href="https://t.me/myasoutovd" target="_blank" rel="noopener" aria-label="Telegram">
+                    <img src="assets/icons/telegram.svg" alt="" aria-hidden="true" />
+                    <span>Telegram</span>
                 </a>
+            </div>
+
+            <div class="contact-actions">
+                <a class="btn primary" href="./assets/Dmitry-Myasoutov-CV.pdf" target="_blank" rel="noopener">View Resume</a>
+                <a class="btn ghost" href="#projects">Back to Projects</a>
             </div>
         </div>
     </section>
 
 </main>
 
-<footer>
-    <section class="download-block reveal">
-        <h2>Resume</h2>
-        <p>Download my CV in PDF format</p>
-        <a class="resume-btn" href="./assets/Dmitry-Myasoutov-CV.pdf" download>
-            📄 Download resume
-        </a>
-    </section>
+<footer class="footer">
+    <div class="wrap">
+        <p>© <span id="year"></span> Dmitry Myasoutov</p>
+    </div>
 </footer>
 
-<script src="./script.js"></script>
-<div id="toast">Thanks for visiting! 🚀</div>
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <svg class="back-to-top__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true">
+        <path d="M256,0C114.608,0,0,114.608,0,256c0,141.376,114.608,256,256,256s256-114.624,256-256C512,114.608,397.392,0,256,0z" fill="currentColor" opacity="0.14" />
+        <path d="M392.4,364.608L256,277.12l-136.4,87.472L256,80.304L392.4,364.608z" fill="currentColor" />
+    </svg>
+</button>
 
+<script src="./script.js"></script>
 </body>
 </html>
