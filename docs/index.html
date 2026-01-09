@@ -13,17 +13,31 @@
 
 <header class="top">
     <div class="top-inner wrap">
-        <a class="brand" href="#top" aria-label="Go to top">DM</a>
+        <a class="brand" href="#top" aria-label="Go to top">D·M</a>
 
-        <nav class="nav" aria-label="Primary navigation">
+        <nav class="nav" id="nav" aria-label="Primary navigation">
             <a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
             <a href="#experience">Experience</a>
             <a href="#contact">Contact</a>
             <a href="./assets/Dmitry-Myasoutov-CV.pdf" target="_blank" rel="noopener">Resume</a>
         </nav>
+
+        <button
+                class="nav-toggle"
+                id="navToggle"
+                type="button"
+                aria-label="Toggle navigation"
+                aria-expanded="false"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </div>
 </header>
+
+<div class="nav-overlay" id="navOverlay"></div>
 
 <main id="top">
 
@@ -87,7 +101,9 @@
             <div class="projects">
 
                 <article class="project">
-                    <img src="./assets/todo-preview.png" alt="ToDo Manager preview" loading="lazy" />
+                    <div class="project-media">
+                        <img src="./assets/todo-preview.png" alt="ToDo Manager preview" loading="lazy" />
+                    </div>
                     <div class="project-body">
                         <h3>ToDo Manager</h3>
                         <p class="project-desc">Task manager with filters and persistence in localStorage.</p>
@@ -104,13 +120,15 @@
                 </article>
 
                 <article class="project">
-                    <img src="./assets/country-preview.png" alt="Country Info Explorer preview" loading="lazy" />
+                    <div class="project-media">
+                        <img src="./assets/country-preview.png" alt="Country Info Explorer preview" loading="lazy" />
+                    </div>
                     <div class="project-body">
                         <h3>Country Info Explorer</h3>
                         <p class="project-desc">SPA to search countries and view details from RESTCountries API.</p>
                         <ul class="project-points">
                             <li>Fetch data via XHR and render dynamically</li>
-                            <li>Loading + error states</li>
+                            <li>Loading and error states</li>
                             <li>Clean UI with responsive layout</li>
                         </ul>
                         <div class="project-buttons">
@@ -121,13 +139,15 @@
                 </article>
 
                 <article class="project">
-                    <img src="./assets/travel-preview.png" alt="Travel Notes preview" loading="lazy" />
+                    <div class="project-media">
+                        <img src="./assets/travel-preview.png" alt="Travel Notes preview" loading="lazy" />
+                    </div>
                     <div class="project-body">
                         <h3>Travel Notes</h3>
                         <p class="project-desc">Travel diary for notes and photos with search and filtering.</p>
                         <ul class="project-points">
                             <li>Create and manage notes (CRUD)</li>
-                            <li>Search + filter by tags/keywords</li>
+                            <li>Search and filter by tags/keywords</li>
                             <li>SCSS styling and UI states</li>
                         </ul>
                         <div class="project-buttons">
@@ -138,7 +158,9 @@
                 </article>
 
                 <article class="project">
-                    <img src="./assets/weather-preview.png" alt="Weather Explorer preview" loading="lazy" />
+                    <div class="project-media">
+                        <img src="./assets/weather-preview.png" alt="Weather Explorer preview" loading="lazy" />
+                    </div>
                     <div class="project-body">
                         <h3>Weather Explorer</h3>
                         <p class="project-desc">Weather app that shows current conditions by city name.</p>
@@ -242,30 +264,32 @@
     </section>
 
     <section id="contact" class="section">
-        <div class="wrap contact">
-            <h2>Let’s work together</h2>
-            <p>Open to a Junior Frontend Developer position or internship.</p>
+        <div class="wrap">
+            <div class="contact">
+                <h2>Let’s work together</h2>
+                <p>Open to a Junior Frontend Developer position or internship.</p>
 
-            <div class="contact-icons" aria-label="Contacts">
-                <a href="mailto:myasoutov.d@gmail.com" aria-label="Email">
-                    <img src="assets/icons/mail.svg" alt="" aria-hidden="true" />
-                    <span>Email</span>
-                </a>
+                <div class="contact-icons" aria-label="Contacts">
+                    <a href="mailto:myasoutov.d@gmail.com" aria-label="Email">
+                        <img src="assets/icons/mail.svg" alt="" aria-hidden="true" />
+                        <span>Email</span>
+                    </a>
 
-                <a href="https://github.com/myasoutovd-cloud" target="_blank" rel="noopener" aria-label="GitHub">
-                    <img src="assets/icons/github.svg" alt="" aria-hidden="true" />
-                    <span>GitHub</span>
-                </a>
+                    <a href="https://github.com/myasoutovd-cloud" target="_blank" rel="noopener" aria-label="GitHub">
+                        <img src="assets/icons/github.svg" alt="" aria-hidden="true" />
+                        <span>GitHub</span>
+                    </a>
 
-                <a href="https://t.me/myasoutovd" target="_blank" rel="noopener" aria-label="Telegram">
-                    <img src="assets/icons/telegram.svg" alt="" aria-hidden="true" />
-                    <span>Telegram</span>
-                </a>
-            </div>
+                    <a href="https://t.me/myasoutovd" target="_blank" rel="noopener" aria-label="Telegram">
+                        <img src="assets/icons/telegram.svg" alt="" aria-hidden="true" />
+                        <span>Telegram</span>
+                    </a>
+                </div>
 
-            <div class="contact-actions">
-                <a class="btn primary" href="./assets/Dmitry-Myasoutov-CV.pdf" target="_blank" rel="noopener">View Resume</a>
-                <a class="btn ghost" href="#projects">Back to Projects</a>
+                <div class="contact-actions">
+                    <a class="btn primary" href="./assets/Dmitry-Myasoutov-CV.pdf" target="_blank" rel="noopener">View Resume</a>
+                    <a class="btn ghost" href="#projects">Back to Projects</a>
+                </div>
             </div>
         </div>
     </section>
