@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             loader.style.display = 'block';
             request({
-                url: `https://restcountries.com/v3.1/all?fields=name,flags`,
+                url: `https://restcountries.com/v3.1/all/?fields=name,flags`,
                 success: data => {
                     countries = data.sort((a, b) => a.name.common.localeCompare(b.name.common));
                     countries.forEach(c => {
