@@ -11,47 +11,51 @@
     <link rel="stylesheet" href="style.css">
     <script src="request.js"></script>
     <script src="script.js" defer></script>
-
-
-
 </head>
 
 <body>
-    <div class="diary">
+<div class="diary">
 
-        <div id="loader" class="loader"></div>
+    <div id="loader" class="loader"></div>
 
-        <div id="postsContainer"></div>
-
-        <div class="form-wrap">
-            <form id="entryForm">
-                <div class="form-row">
-
-                    <div class="form-left">
-                        <div class="field">
-                            <label for="country">Country</label>
-                            <select id="country" name="country" required>
-                                <option value="">Select country...</option>
-                            </select>
-                        </div>
-
-                        <div class="field">
-                            <label for="date">Date</label>
-                            <input id="date" type="date" name="date" required>
-                        </div>
+    <!-- 1. Форма создания записи -->
+    <div class="form-wrap">
+        <form id="entryForm">
+            <div class="form-row">
+                <div class="form-left">
+                    <div class="field">
+                        <label for="country">Country</label>
+                        <select id="country" name="country" required>
+                            <option value="">Select country...</option>
+                        </select>
                     </div>
 
-
-                    <div class="form-right">
-                        <textarea id="message" name="message" placeholder="Message..." required></textarea>
-                        <button type="submit" class="btn btn-large">+</button>
+                    <div class="field">
+                        <label for="date">Date</label>
+                        <input id="date" type="text" name="date" required>
                     </div>
                 </div>
-            </form>
-        </div>
 
-
+                <div class="form-right">
+                    <textarea id="message" name="message" placeholder="Message..." required></textarea>
+                    <button type="submit" class="btn btn-large">+</button>
+                </div>
+            </div>
+        </form>
     </div>
+
+    <!-- 2. Панель поиска и фильтрации (ТЕПЕРЬ НАД ПОСТАМИ) -->
+    <div class="filter-panel">
+        <input type="text" id="searchInput" placeholder="Search in posts..." />
+        <select id="filterCountry">
+            <option value="all">All Countries</option>
+        </select>
+    </div>
+
+    <!-- 3. Контейнер только для самих постов -->
+    <div id="postsContainer"></div>
+
+</div>
 </body>
 
 </html>

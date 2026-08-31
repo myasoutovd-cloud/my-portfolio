@@ -1,24 +1,16 @@
-const request = (config) => {
-    const xhr = new XMLHttpRequest();
+const request = async (config) => {
+    try {
+        const response = await fetch(config.url, {
+            method: config.method || 'GET'
+        });
 
-    xhr.addEventListener("load", function () {
-
-        if (this.status >= 200 && this.status < 300) {
-            const response = JSON.parse(this.responseText);
-            config.success(response);
-        } else {
-            config.error(this.status);
+        if (!response.ok) {
+            throw new Error(response.status);
         }
-    });
 
-    xhr.addEventListener("error", function (e) {
-        config.error('Connection error');
-    });
-
-    xhr.addEventListener("timeout", function (e) {
-        config.error('Request timeout');
-    });
-
-    xhr.open(config.method || "GET", config.url);
-    xhr.send();
-}
+        const data = await response.json();
+        config.success(data);
+    } catch (err) {
+        config.error(err.message || 'Connection error');
+    }
+};
